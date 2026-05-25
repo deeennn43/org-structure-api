@@ -2,6 +2,8 @@
 
 REST API для управления подразделениями и сотрудниками (дерево департаментов + сотрудники).
 
+Репозиторий: https://github.com/deeennn43/org-structure-api
+
 ## Стек
 
 - Go `net/http`
