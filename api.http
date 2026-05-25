@@ -1,0 +1,66 @@
+### API организационной структуры
+### Запустите сервер: docker compose up --build
+@baseUrl = http://localhost:8080
+
+### 1) Создать корневое подразделение
+POST {{baseUrl}}/departments/
+Content-Type: application/json
+
+{
+  "name": "Компания"
+}
+
+### 2) Создать дочернее подразделение (подставьте parent_id из ответа выше)
+POST {{baseUrl}}/departments/
+Content-Type: application/json
+
+{
+  "name": "IT",
+  "parent_id": 1
+}
+
+### 3) Создать сотрудника в подразделении
+POST {{baseUrl}}/departments/2/employees/
+Content-Type: application/json
+
+{
+  "full_name": "Иван Иванов",
+  "position": "Backend Developer",
+  "hired_at": "2024-06-01"
+}
+
+### 4) Получить подразделение с деревом и сотрудниками
+GET {{baseUrl}}/departments/1?depth=2&include_employees=true
+
+### 5) Переместить / переименовать подразделение
+PATCH {{baseUrl}}/departments/2
+Content-Type: application/json
+
+{
+  "name": "IT Department",
+  "parent_id": 1
+}
+
+### 6) Удалить подразделение — каскад (дочерние + сотрудники)
+DELETE {{baseUrl}}/departments/2?mode=cascade
+
+### 7) Удалить подразделение — перевести сотрудников в другой отдел
+# Сначала создайте отдел без дочерних, затем:
+DELETE {{baseUrl}}/departments/3?mode=reassign&reassign_to_department_id=1
+
+### Проверка ошибок: пустое имя (ожидается 400)
+POST {{baseUrl}}/departments/
+Content-Type: application/json
+
+{
+  "name": "   "
+}
+
+### Проверка ошибок: сотрудник в несуществующий отдел (ожидается 404)
+POST {{baseUrl}}/departments/99999/employees/
+Content-Type: application/json
+
+{
+  "full_name": "Тест",
+  "position": "QA"
+}

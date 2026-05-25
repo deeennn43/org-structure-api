@@ -1,0 +1,13 @@
+package apperrors
+
+import "errors"
+
+// Доменные ошибки — сервисный слой возвращает их,
+// HTTP-слой переводит в нужные коды ответа (404, 409, 400).
+var (
+	ErrNotFound       = errors.New("not found")
+	ErrConflict       = errors.New("conflict")
+	ErrValidation     = errors.New("validation")
+	ErrCycle          = errors.New("department cycle")
+	ErrDuplicateName  = errors.New("duplicate department name")
+)
