@@ -1,8 +1,7 @@
-package domain
+﻿package domain
 
 import "time"
 
-// Employee — сотрудник, привязанный к одному подразделению.
 type Employee struct {
 	ID           uint       `json:"id"`
 	DepartmentID uint       `json:"department_id"`

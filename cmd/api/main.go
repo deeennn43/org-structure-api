@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"context"
@@ -10,12 +10,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/danil/org-structure-api/internal/config"
-	"github.com/danil/org-structure-api/internal/database"
-	"github.com/danil/org-structure-api/internal/handler"
-	"github.com/danil/org-structure-api/internal/migrate"
-	gormrepo "github.com/danil/org-structure-api/internal/repository/gorm"
-	"github.com/danil/org-structure-api/internal/service"
+	"github.com/deeennn43/org-structure-api/internal/config"
+	"github.com/deeennn43/org-structure-api/internal/database"
+	"github.com/deeennn43/org-structure-api/internal/handler"
+	"github.com/deeennn43/org-structure-api/internal/migrate"
+	gormrepo "github.com/deeennn43/org-structure-api/internal/repository/gorm"
+	"github.com/deeennn43/org-structure-api/internal/service"
 )
 
 func main() {

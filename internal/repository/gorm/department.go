@@ -1,12 +1,12 @@
-package gormrepo
+﻿package gormrepo
 
 import (
 	"context"
 	"errors"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
-	"github.com/danil/org-structure-api/internal/domain"
-	"github.com/danil/org-structure-api/internal/repository"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/domain"
+	"github.com/deeennn43/org-structure-api/internal/repository"
 	"gorm.io/gorm"
 )
 

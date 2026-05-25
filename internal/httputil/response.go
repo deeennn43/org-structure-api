@@ -1,4 +1,4 @@
-package httputil
+﻿package httputil
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
 )
 
 func WriteJSON(w http.ResponseWriter, status int, v any) {

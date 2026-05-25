@@ -1,4 +1,4 @@
-package handler
+﻿package handler
 
 import (
 	"errors"
@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
-	"github.com/danil/org-structure-api/internal/config"
-	"github.com/danil/org-structure-api/internal/httputil"
-	"github.com/danil/org-structure-api/internal/service"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/config"
+	"github.com/deeennn43/org-structure-api/internal/httputil"
+	"github.com/deeennn43/org-structure-api/internal/service"
 )
 
 type DepartmentHandler struct {

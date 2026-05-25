@@ -1,4 +1,4 @@
-module github.com/danil/org-structure-api
+module github.com/deeennn43/org-structure-api
 
 go 1.23.0
 

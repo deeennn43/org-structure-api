@@ -1,12 +1,11 @@
-package repository
+﻿package repository
 
 import (
 	"context"
 
-	"github.com/danil/org-structure-api/internal/domain"
+	"github.com/deeennn43/org-structure-api/internal/domain"
 )
 
-// DepartmentRepository — контракт доступа к подразделениям (Dependency Inversion).
 type DepartmentRepository interface {
 	Create(ctx context.Context, d *domain.Department) error
 	GetByID(ctx context.Context, id uint) (*domain.Department, error)

@@ -1,4 +1,4 @@
-package handler
+﻿package handler
 
 import (
 	"log/slog"
@@ -6,7 +6,6 @@ import (
 	"time"
 )
 
-// NewRouter собирает маршруты net/http (требование ТЗ).
 func NewRouter(dh *DepartmentHandler) http.Handler {
 	mux := http.NewServeMux()
 

@@ -1,13 +1,13 @@
-package service
+﻿package service
 
 import (
 	"context"
 	"time"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
-	"github.com/danil/org-structure-api/internal/domain"
-	"github.com/danil/org-structure-api/internal/repository"
-	"github.com/danil/org-structure-api/internal/validation"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/domain"
+	"github.com/deeennn43/org-structure-api/internal/repository"
+	"github.com/deeennn43/org-structure-api/internal/validation"
 )
 
 type EmployeeService struct {

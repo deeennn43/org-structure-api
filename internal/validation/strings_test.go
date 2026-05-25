@@ -1,10 +1,10 @@
-package validation_test
+﻿package validation_test
 
 import (
 	"testing"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
-	"github.com/danil/org-structure-api/internal/validation"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/validation"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

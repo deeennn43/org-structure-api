@@ -1,4 +1,4 @@
-package config
+﻿package config
 
 import (
 	"fmt"
@@ -6,7 +6,6 @@ import (
 	"strconv"
 )
 
-// Config — настройки приложения из переменных окружения.
 type Config struct {
 	HTTPPort   string
 	DBHost     string

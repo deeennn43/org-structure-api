@@ -1,17 +1,16 @@
-package service
+﻿package service
 
 import (
 	"context"
 	"errors"
 	"fmt"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
-	"github.com/danil/org-structure-api/internal/domain"
-	"github.com/danil/org-structure-api/internal/repository"
-	"github.com/danil/org-structure-api/internal/validation"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/domain"
+	"github.com/deeennn43/org-structure-api/internal/repository"
+	"github.com/deeennn43/org-structure-api/internal/validation"
 )
 
-// DepartmentService — бизнес-логика подразделений (Single Responsibility).
 type DepartmentService struct {
 	depts repository.DepartmentRepository
 	emps  repository.EmployeeRepository
@@ -121,7 +120,6 @@ func (s *DepartmentService) validateParentChange(ctx context.Context, deptID uin
 	return nil
 }
 
-// ensureNoCycle: newParent не должен находиться в поддереве deptID.
 func (s *DepartmentService) ensureNoCycle(ctx context.Context, deptID, newParentID uint) error {
 	current := newParentID
 	for {

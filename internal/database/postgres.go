@@ -1,9 +1,9 @@
-package database
+﻿package database
 
 import (
 	"fmt"
 
-	"github.com/danil/org-structure-api/internal/config"
+	"github.com/deeennn43/org-structure-api/internal/config"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

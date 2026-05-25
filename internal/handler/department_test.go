@@ -1,4 +1,4 @@
-package handler_test
+﻿package handler_test
 
 import (
 	"bytes"
@@ -7,10 +7,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
-	"github.com/danil/org-structure-api/internal/domain"
-	"github.com/danil/org-structure-api/internal/handler"
-	"github.com/danil/org-structure-api/internal/service"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/domain"
+	"github.com/deeennn43/org-structure-api/internal/handler"
+	"github.com/deeennn43/org-structure-api/internal/service"
 	"github.com/stretchr/testify/assert"
 )
 

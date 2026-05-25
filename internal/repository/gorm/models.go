@@ -1,8 +1,6 @@
-package gormrepo
+﻿package gormrepo
 
 import "time"
-
-// GORM-модели отражают таблицы БД. Отдельно от domain, чтобы слой БД не «протекал» в HTTP.
 
 type departmentModel struct {
 	ID        uint `gorm:"primaryKey"`

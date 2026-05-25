@@ -1,12 +1,11 @@
-package repository
+﻿package repository
 
 import (
 	"context"
 
-	"github.com/danil/org-structure-api/internal/domain"
+	"github.com/deeennn43/org-structure-api/internal/domain"
 )
 
-// EmployeeRepository — контракт доступа к сотрудникам.
 type EmployeeRepository interface {
 	Create(ctx context.Context, e *domain.Employee) error
 	ListByDepartment(ctx context.Context, departmentID uint) ([]domain.Employee, error)

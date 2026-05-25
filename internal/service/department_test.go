@@ -1,17 +1,16 @@
-package service_test
+﻿package service_test
 
 import (
 	"context"
 	"testing"
 
-	"github.com/danil/org-structure-api/internal/apperrors"
-	"github.com/danil/org-structure-api/internal/domain"
-	"github.com/danil/org-structure-api/internal/service"
+	"github.com/deeennn43/org-structure-api/internal/apperrors"
+	"github.com/deeennn43/org-structure-api/internal/domain"
+	"github.com/deeennn43/org-structure-api/internal/service"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
 
-// fakeDeptRepo — простая in-memory реализация для unit-тестов без PostgreSQL.
 type fakeDeptRepo struct {
 	byID map[uint]*domain.Department
 	next uint
