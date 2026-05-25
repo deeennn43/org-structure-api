@@ -2,7 +2,6 @@
 
 import "errors"
 
-// HTTP-слой переводит в нужные коды ответа (404, 409, 400).
 var (
 	ErrNotFound       = errors.New("not found")
 	ErrConflict       = errors.New("conflict")
